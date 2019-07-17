@@ -17,6 +17,7 @@ function App() {
     axios
     .get("https://api.nasa.gov/planetary/apod?api_key=AcOjW5HR3dXgctkKQ3hfCLxIs8yyy26t02u9RKkc")
     .then(response => {
+      // set our state variables to the data coming in from the API
       setNasaData(response);
       setDate(response.data.date);
       setExplanation(response.data.explanation);
@@ -26,6 +27,7 @@ function App() {
       console.log(response);
     })
   }, [])
+
   return (
     <div className="App">
       <Header date={date} />

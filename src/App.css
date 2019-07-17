@@ -36,7 +36,7 @@
 }
 .space-card .card-title {
   text-shadow: 1px 1px 3px white;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
   margin: 10px;
   margin-top: 20px;
@@ -63,6 +63,21 @@
 .space-card .video-btn:active {
   transform: translateY(2px);
   background-color: #9d86c2;
+}
+.space-card .video-input {
+  position: relative;
+  top: -70px;
+  left: 450px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  height: 1.2rem;
+}
+.space-card .video-time-btn {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -55px;
 }
 
 .explanation-card {

@@ -1,15 +1,25 @@
 import React, { useState } from "react";
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
 
 
 export default function SpaceCard(props) {
   let [isVideoPlaying, togglePlayPause] = useState(false);
 
+  // function to render youtube player if the data gives us a video
   function DisplayVideo() {
+    // check if it is a video
     if (props.mediaType === "video") {
-      return (<ReactPlayer url={props.url} controls={true} 
+      // if it is a video, return  the ReactPlayer element given the URL from the API data
+      return (
+        [<ReactPlayer url={props.url} controls={true} 
         playing={isVideoPlaying} width='600px' height='500px' 
-        style={{margin: 'auto', marginTop: '30px'}} className="video-player"/>);
+        style={{margin: 'auto', marginTop: '30px'}} className="video-player"/>,
+        
+        <button onClick={()=> togglePlayPause(isVideoPlaying ? false : true)} className="video-btn">Play / Pause</button>,
+
+        <input placeholder="Enter a video time" className="video-input"></input>,
+        <button className="video-time-btn"></button>]
+      );
     }
   }
 
@@ -19,7 +29,7 @@ export default function SpaceCard(props) {
 
       {DisplayVideo()}
 
-      <button onClick={()=> togglePlayPause(isVideoPlaying ? false : true)} className="video-btn">Play / Pause</button>
+      
     </div>
   )
 }

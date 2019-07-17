@@ -38,7 +38,7 @@
 
   .card-title {
     text-shadow: 1px 1px 3px white;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     margin: 10px;
     margin-top: 20px;
@@ -67,6 +67,21 @@
       transform: translateY(2px);
       background-color: rgb(157, 134, 194);
     }
+  }
+  .video-input {
+    position: relative;
+    top: -70px;
+    left: 450px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    height: 1.2rem;
+  }
+  .video-time-btn {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -55px;
   }
 }
 
