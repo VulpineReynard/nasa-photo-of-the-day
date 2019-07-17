@@ -2,51 +2,100 @@
   width: 100%;
   height: 100px;
   background: #5959c9;
-  box-shadow: 0px 3px 3px 0 grey;
+  box-shadow: 0px 0px 3px 2px #8a8abe;
   border-radius: 5px;
   margin-top: 10px;
-  border: 2px solid #451d7a;
+  border: 2px solid #8a8abe;
+}
+.header .title {
+  font-size: 5rem;
+  color: white;
+  margin: 0;
+  margin-left: 20px;
+  text-shadow: 2px 2px 7px white;
+}
+.header .date {
+  width: 200px;
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px white;
+  position: relative;
+  top: -90px;
+  left: 1050px;
 }
 
 .space-card {
   width: 700px;
-  height: 600px;
+  height: 650px;
   margin: 20px 0;
-  border: 2px solid #451d7a;
+  border: 2px solid #8a8abe;
   border-radius: 5px;
   background: #5959c9;
-  box-shadow: 0px 3px 3px 0 grey;
+  box-shadow: 0px 0px 3px 2px #8a8abe;
 }
 .space-card .card-title {
+  text-shadow: 1px 1px 3px white;
   font-size: 1.8rem;
-  text-decoration: underline;
   text-align: center;
-  margin: 10px 0px;
+  margin: 10px;
+  margin-top: 20px;
   color: white;
+  letter-spacing: 0.05rem;
+}
+.space-card .video-btn {
+  width: 130px;
+  height: 40px;
+  margin: 10px 285px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+  border: 2px solid #8a8abe;
+  color: white;
+  background: #482a79;
+}
+.space-card .video-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 7px 1px #d4a5d4;
+  background-color: #5d3a96;
+}
+.space-card .video-btn:active {
+  transform: translateY(2px);
+  background-color: #9d86c2;
 }
 
 .explanation-card {
   width: 430px;
-  height: 570px;
-  border: 2px solid #451d7a;
+  height: 617px;
+  border: 2px solid #8a8abe;
   border-radius: 5px;
   background: #5959c9;
-  box-shadow: 0px 3px 3px 0 grey;
+  box-shadow: 0px 0px 3px 2px #8a8abe;
   padding: 1rem;
   position: relative;
-  top: -623px;
+  top: -673px;
   right: -737px;
 }
 .explanation-card h3 {
   color: white;
   text-align: center;
   font-size: 1.4rem;
-  margin: 5px 0;
+  margin: 20px 0;
+  text-shadow: 1px 1px 2px white;
+  letter-spacing: 0.2rem;
 }
 .explanation-card p {
   color: white;
   line-height: 1.4rem;
   text-align: center;
+  margin: auto 5px;
+  margin-top: 30px;
+}
+
+.space-pic {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=App.css.map */

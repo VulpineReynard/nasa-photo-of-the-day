@@ -20,7 +20,7 @@ function App() {
       setNasaData(response);
       setDate(response.data.date);
       setExplanation(response.data.explanation);
-      setMediaType(response.data.mediaType);
+      setMediaType(response.data.media_type);
       setTitle(response.data.title);
       setUrl(response.data.url);
       console.log(response);
@@ -28,11 +28,10 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <Header />
+      <Header date={date} />
       <SpaceCard 
       nasaData={nasaData} 
-      date={date} 
-      explanation={explanation}
+      date={date}
       mediaType={mediaType}
       title={title}
       url={url}
