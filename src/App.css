@@ -8,11 +8,11 @@
   border: 2px solid #8a8abe;
 }
 .header .title {
-  font-size: 5rem;
+  text-align: center;
+  font-size: 4rem;
   color: white;
   margin: 0;
-  margin-left: 20px;
-  text-shadow: 2px 2px 7px white;
+  text-shadow: 2px 2px 5px white;
 }
 .header .date {
   width: 200px;
@@ -128,10 +128,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  height: 300px;
   position: relative;
-  bottom: 600px;
+  bottom: 640px;
   margin: auto;
   background: white;
   border: 2px solid #8a8abe;
@@ -146,19 +144,47 @@
 .newsletter-form .field {
   margin: 10px 0;
   text-align: center;
+  width: 300px;
 }
 .newsletter-form .field input {
+  position: relative;
   height: 1.4rem;
   border-radius: 3px;
   border: none;
   padding: 0 5px;
+  outline: none;
+  box-shadow: 0 0 2px 1px white;
+  left: 10px;
+}
+.newsletter-form .field input.hidden {
+  height: 1rem;
+  padding: none;
+  cursor: pointer;
+  width: 1rem;
+  box-shadow: none;
+  left: -5px;
+  top: 3px;
 }
 .newsletter-form button {
-  width: 100px;
+  margin-bottom: 20px;
+  width: 200px;
   height: 30px;
   border-radius: 5px;
   outline: none;
   cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid #8a8abe;
+  color: white;
+  background: #482a79;
+}
+.newsletter-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 7px 1px #d4a5d4;
+  background-color: #5d3a96;
+}
+.newsletter-form button:active {
+  transform: translateY(2px);
+  background-color: #9d86c2;
 }
 
 /*# sourceMappingURL=App.css.map */

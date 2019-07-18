@@ -8,11 +8,11 @@
   border: 2px solid rgb(138, 138, 190);
 
   .title {
-    font-size: 5rem;
+    text-align: center;
+    font-size: 4rem;
     color: white;
     margin: 0;
-    margin-left: 20px;
-    text-shadow: 2px 2px 7px white;
+    text-shadow: 2px 2px 5px white;
   }
 
   .date {
@@ -135,10 +135,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  height: 300px;
   position: relative;
-  bottom: 600px;
+  bottom: 640px;
   margin: auto;
   background: white;
   border: 2px solid rgb(138, 138, 190);
@@ -154,20 +152,49 @@
   .field {
     margin: 10px 0;
     text-align: center;
+    width: 300px;
 
     input {
+      position: relative;
       height: 1.4rem;
       border-radius: 3px;
       border: none;
       padding: 0 5px;
+      outline: none;
+      box-shadow: 0 0 2px 1px white;
+      left: 10px;
+    }
+    input.hidden {
+      height: 1rem;
+      padding: none;
+      cursor: pointer;
+      width: 1rem;
+      box-shadow: none;
+      left: -5px;
+      top: 3px;
     }
   }
 
   button {
-    width: 100px;
+    margin-bottom: 20px;
+    width: 200px;
     height: 30px;
     border-radius: 5px;
     outline: none;
     cursor: pointer;
+    transition: all .2s;
+    border: 2px solid rgb(138, 138, 190);
+    color: white;
+    background: rgb(72, 42, 121);
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 7px 1px rgb(212, 165, 212);
+      background-color: rgb(93, 58, 150);
+    }
+    &:active {
+      transform: translateY(2px);
+      background-color: rgb(157, 134, 194);
+    }
   }
 }

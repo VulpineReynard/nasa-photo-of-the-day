@@ -5,6 +5,9 @@ import SpaceCard from "./Components/SpaceCard.js";
 import Header from "./Components/Header";
 import ExplanationCard from "./Components/ExplanationCard";
 import NewsletterSection from "./Components/NewsletterSection";
+import Modal from 'react-modal';
+
+Modal.setAppElement('#root')
 
 function App() {
   const [nasaData, setNasaData] = useState([]);

@@ -7,7 +7,7 @@ export default function Header(props) {
 
   return (
     <div className="header">
-      <h1 className="title">NASA</h1>
+      <h2 className="title">Image of the Day</h2>
       <NasaLogo />
       <p className="date">{props.date}</p>
     </div>
