@@ -22,12 +22,20 @@ export default function SpaceCard(props) {
       );
     }
   }
+  function DisplayPicture() {
+    if(props.mediaType === "image") {
+      return (
+        <img src={props.url} className="nasa-img"/>
+      )
+    }
+  }
 
   return (
     <div className="space-card">
       <h2 className="card-title">{props.title}</h2>
 
       {DisplayVideo()}
+      {DisplayPicture()}
 
       
     </div>
