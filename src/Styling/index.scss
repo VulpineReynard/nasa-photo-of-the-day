@@ -1,0 +1,200 @@
+.header {
+  width: 100%;
+  height: 100px;
+  background: rgb(89, 89, 201);
+  box-shadow: 0px 0px 5px 1px rgb(138, 138, 190);
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 2px solid rgb(138, 138, 190);
+
+  .title {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin: 0;
+    text-shadow: 2px 2px 5px white;
+  }
+
+  .date {
+    width: 200px;
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px white;
+    position: relative;
+    top: -90px;
+    left: 1050px;
+  }
+
+  .nasa-logo {
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+  }
+}
+
+.space-card {
+  width: 700px;
+  height: 650px;
+  margin: 20px 0;
+  border: 2px solid rgb(138, 138, 190);
+  border-radius: 5px;
+  background: rgb(89, 89, 201);
+  box-shadow: 0px 0px 5px 1px rgb(138, 138, 190);
+
+  .card-title {
+    text-shadow: 1px 1px 3px white;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+    color: white;
+    letter-spacing: .05rem;
+  }
+
+  .video-btn {
+    width: 130px;
+    height: 40px;
+    margin: 10px 285px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: all .2s;
+    border: 2px solid rgb(138, 138, 190);
+    color: white;
+    background: rgb(72, 42, 121);
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 7px 1px rgb(212, 165, 212);
+      background-color: rgb(93, 58, 150);
+    }
+    &:active {
+      transform: translateY(2px);
+      background-color: rgb(157, 134, 194);
+    }
+  }
+  .video-input {
+    position: relative;
+    top: -70px;
+    left: 450px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    height: 1.2rem;
+  }
+  .video-time-btn {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -55px;
+  }
+
+  .nasa-img {
+    width: 650px;
+    margin: 25px;
+    border-radius: 3px;
+  }
+}
+
+.explanation-card {
+  width: 430px;
+  height: 617px;
+  border: 2px solid rgb(138, 138, 190);
+  border-radius: 5px;
+  background: rgb(89, 89, 201);
+  box-shadow: 0px 0px 5px 1px rgb(138, 138, 190);
+  padding: 1rem;
+  position: relative;
+  top: -673px;
+  right: -737px;
+
+  h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px white;
+    letter-spacing: .2rem;
+  }
+
+  p {
+    color: white;
+    line-height: 1.4rem;
+    text-align: center;
+    margin: auto 5px;
+    margin-top: 30px;
+  }
+}
+.space-pic {
+  width: 100%;
+  height: 100%;
+}
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 640px;
+  margin: auto;
+  background: white;
+  border: 2px solid rgb(138, 138, 190);
+  border-radius: 5px;
+  background: rgb(89, 89, 201);
+  box-shadow: 0px 0px 5px 1px rgb(138, 138, 190);
+  color: white;
+
+  h2 {
+    text-align: center;
+  }
+
+  .field {
+    margin: 10px 0;
+    text-align: center;
+    width: 300px;
+
+    input {
+      position: relative;
+      height: 1.4rem;
+      border-radius: 3px;
+      border: none;
+      padding: 0 5px;
+      outline: none;
+      box-shadow: 0 0 2px 1px white;
+      left: 10px;
+    }
+    input.hidden {
+      height: 1rem;
+      padding: none;
+      cursor: pointer;
+      width: 1rem;
+      box-shadow: none;
+      left: -5px;
+      top: 3px;
+    }
+  }
+
+  button {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s;
+    border: 2px solid rgb(138, 138, 190);
+    color: white;
+    background: rgb(72, 42, 121);
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 7px 1px rgb(212, 165, 212);
+      background-color: rgb(93, 58, 150);
+    }
+    &:active {
+      transform: translateY(2px);
+      background-color: rgb(157, 134, 194);
+    }
+  }
+}

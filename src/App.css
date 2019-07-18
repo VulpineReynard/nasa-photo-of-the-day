@@ -1,33 +1,190 @@
-.App {
+.header {
+  width: 100%;
+  height: 100px;
+  background: #5959c9;
+  box-shadow: 0px 0px 5px 1px #8a8abe;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 2px solid #8a8abe;
+}
+.header .title {
   text-align: center;
+  font-size: 4rem;
+  color: white;
+  margin: 0;
+  text-shadow: 2px 2px 5px white;
+}
+.header .date {
+  width: 200px;
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px white;
+  position: relative;
+  top: -90px;
+  left: 1050px;
+}
+.header .nasa-logo {
+  width: 100px;
+  height: 100px;
+  z-index: 2;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.space-card {
+  width: 700px;
+  height: 650px;
+  margin: 20px 0;
+  border: 2px solid #8a8abe;
+  border-radius: 5px;
+  background: #5959c9;
+  box-shadow: 0px 0px 5px 1px #8a8abe;
+}
+.space-card .card-title {
+  text-shadow: 1px 1px 3px white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px;
+  margin-top: 20px;
+  color: white;
+  letter-spacing: 0.05rem;
+}
+.space-card .video-btn {
+  width: 130px;
+  height: 40px;
+  margin: 10px 285px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+  border: 2px solid #8a8abe;
+  color: white;
+  background: #482a79;
+}
+.space-card .video-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 7px 1px #d4a5d4;
+  background-color: #5d3a96;
+}
+.space-card .video-btn:active {
+  transform: translateY(2px);
+  background-color: #9d86c2;
+}
+.space-card .video-input {
+  position: relative;
+  top: -70px;
+  left: 450px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  height: 1.2rem;
+}
+.space-card .video-time-btn {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -55px;
+}
+.space-card .nasa-img {
+  width: 650px;
+  margin: 25px;
+  border-radius: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.explanation-card {
+  width: 430px;
+  height: 617px;
+  border: 2px solid #8a8abe;
+  border-radius: 5px;
+  background: #5959c9;
+  box-shadow: 0px 0px 5px 1px #8a8abe;
+  padding: 1rem;
+  position: relative;
+  top: -673px;
+  right: -737px;
+}
+.explanation-card h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 20px 0;
+  text-shadow: 1px 1px 2px white;
+  letter-spacing: 0.2rem;
+}
+.explanation-card p {
+  color: white;
+  line-height: 1.4rem;
+  text-align: center;
+  margin: auto 5px;
+  margin-top: 30px;
+}
+
+.space-pic {
+  width: 100%;
+  height: 100%;
+}
+
+.newsletter-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  position: relative;
+  bottom: 640px;
+  margin: auto;
+  background: white;
+  border: 2px solid #8a8abe;
+  border-radius: 5px;
+  background: #5959c9;
+  box-shadow: 0px 0px 5px 1px #8a8abe;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.newsletter-form h2 {
+  text-align: center;
+}
+.newsletter-form .field {
+  margin: 10px 0;
+  text-align: center;
+  width: 300px;
+}
+.newsletter-form .field input {
+  position: relative;
+  height: 1.4rem;
+  border-radius: 3px;
+  border: none;
+  padding: 0 5px;
+  outline: none;
+  box-shadow: 0 0 2px 1px white;
+  left: 10px;
+}
+.newsletter-form .field input.hidden {
+  height: 1rem;
+  padding: none;
+  cursor: pointer;
+  width: 1rem;
+  box-shadow: none;
+  left: -5px;
+  top: 3px;
+}
+.newsletter-form button {
+  margin-bottom: 20px;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid #8a8abe;
+  color: white;
+  background: #482a79;
+}
+.newsletter-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 7px 1px #d4a5d4;
+  background-color: #5d3a96;
+}
+.newsletter-form button:active {
+  transform: translateY(2px);
+  background-color: #9d86c2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */

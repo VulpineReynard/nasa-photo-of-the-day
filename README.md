@@ -38,7 +38,7 @@ Follow these steps for completing your project.
 - [ ] Your team lead will count the project as complete by merging the branch back into master.
 - [ ] Do your magic!
 
-# _Project - NASA APOD - Part I_
+# _Project - NASA APOD - Part I
 
 - This is a really fun project, and one to show your family and friends when you've finished.
 - You will be starting from scratch and building the entire app
