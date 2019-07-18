@@ -1,4 +1,4 @@
-import React, { setState } from "react";
+import React, { setState, state } from "react";
 import { Button, Checkbox, Form, Icon, Header } from 'semantic-ui-react';
 import Modal from 'react-modal';
 
@@ -14,10 +14,22 @@ const customStyles = {
 };
 
 export default function NewsletterSection() {
+  Modal.state = {modalIsOpen: false};
 
   function openModal() {
       Modal.setState({modalIsOpen: true});
-}
+      console.log(Modal.state);
+  }
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    Modal.subtitle.style.color = '#f00';
+  }
+  function closeModal() {
+    Modal.setState({modalIsOpen: false});
+  }
+  Modal.state = {
+    modalIsOpen: false
+  };
 
   const NewsletterForm = () => (
     <Form className="newsletter-form">
@@ -45,6 +57,13 @@ export default function NewsletterSection() {
   )
 
   return (
+    <Modal
+      isOpen={Modal.state.modalIsOpen}
+      onAfterOpen={afterOpenModal}
+      onRequestClose={closeModal}
+      style={customStyles}
+      contentLabel="Example Modal"
+    />,
     <NewsletterForm />
-  )
+  );
 }

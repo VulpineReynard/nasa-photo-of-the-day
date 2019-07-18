@@ -6,7 +6,7 @@ export default function SpaceCard(props) {
   let [isVideoPlaying, togglePlayPause] = useState(false);
 
   // function to render youtube player if the data gives us a video
-  function DisplayVideo() {
+  function DisplayCardContent() {
     // check if it is a video
     if (props.mediaType === "video") {
       // if it is a video, return  the ReactPlayer element given the URL from the API data
@@ -20,24 +20,17 @@ export default function SpaceCard(props) {
         <input placeholder="Enter a video time" className="video-input"></input>,
         <button className="video-time-btn"></button>]
       );
-    }
-  }
-  function DisplayPicture() {
-    if(props.mediaType === "image") {
-      return (
-        <img src={props.url} className="nasa-img"/>
-      )
+    } else if(props.mediaType === "image") {
+        return (
+          <img src={props.url} className="nasa-img"/>
+        )
     }
   }
 
   return (
     <div className="space-card">
       <h2 className="card-title">{props.title}</h2>
-
-      {DisplayVideo()}
-      {DisplayPicture()}
-
-      
+      {DisplayCardContent()}
     </div>
   )
 }
