@@ -123,4 +123,42 @@
   height: 100%;
 }
 
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 300px;
+  position: relative;
+  bottom: 600px;
+  margin: auto;
+  background: white;
+  border: 2px solid #8a8abe;
+  border-radius: 5px;
+  background: #5959c9;
+  box-shadow: 0px 0px 5px 1px #8a8abe;
+  color: white;
+}
+.newsletter-form h2 {
+  text-align: center;
+}
+.newsletter-form .field {
+  margin: 10px 0;
+  text-align: center;
+}
+.newsletter-form .field input {
+  height: 1.4rem;
+  border-radius: 3px;
+  border: none;
+  padding: 0 5px;
+}
+.newsletter-form button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=App.css.map */

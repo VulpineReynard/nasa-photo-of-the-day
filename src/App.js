@@ -4,6 +4,7 @@ import "./App.css";
 import SpaceCard from "./Components/SpaceCard.js";
 import Header from "./Components/Header";
 import ExplanationCard from "./Components/ExplanationCard";
+import NewsletterSection from "./Components/NewsletterSection";
 
 function App() {
   const [nasaData, setNasaData] = useState([]);
@@ -39,6 +40,7 @@ function App() {
       url={url}
       />
       <ExplanationCard explanation={explanation} />
+      <NewsletterSection />
     </div>
   );
 }
